@@ -44,6 +44,14 @@ $name = 'Name McNameyson';
 
 $pdf->MultiCell(80, 3, strtoupper($name) .',', 0, 'L', 0, 1, '24', '68', true);
 
+$pdf->MultiCell(58, 3, $_POST ['name'], 0, 'L', 0, 1, '126', '40.5', true);
+$pdf->MultiCell(80, 3, $_POST ['name'] . ",", 0, 'L', 0, 1, '24', '68', true);
+$pdf->MultiCell(80, 3, $_POST ['name'], 0, 'L', 0, 1, '101', '148', true);
+$pdf->MultiCell(80, 3, $_POST ['name'], 0, 'L', 0, 1, '101', '164', true);
+$pdf->MultiCell(80, 3, $_POST ['name'], 0, 'L', 0, 1, '101', '172', true);
+$pdf->MultiCell(80, 3, $_POST ['name'] . ", " . $_POST ['name'] . " " .  $_POST ['name'], 0, 'L', 0, 1, '101', '180', true);
+$pdf->MultiCell(80, 3, $_POST ['name'], 0, 'L', 0, 1, '101', '188', true);
+
 // increment pages
 
 $tplidx = $pdf->importPage(1);
